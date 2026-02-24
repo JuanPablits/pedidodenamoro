@@ -1,0 +1,166 @@
+/* Fundo romântico e centralização */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px; /* Um pouco mais estreito para ficar perfeito no celular */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* --- TELA DA PERGUNTA --- */
+.question-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 35px 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.question-container h2 {
+  color: #ff4b72;
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.question-text {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+.options-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option-button {
+  background-color: #fff;
+  color: #ff4b72;
+  border: 2px solid #ff4b72;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-button:hover, .option-button:active {
+  background-color: #ff4b72;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 75, 114, 0.3);
+}
+
+/* --- TELA DO MAPA --- */
+.map-container {
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.map-header {
+  background-color: #ff4b72;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.map-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.address-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #eee;
+}
+
+.address-bar p {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Ajustes da área da senha */
+.password-section {
+  padding: 25px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.password-section p {
+  margin-top: 0;
+  color: #4a4a4a;
+  font-weight: bold;
+}
+
+.password-section input {
+  width: calc(100% - 24px);
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.password-section input:focus {
+  outline: none;
+  border-color: #ff4b72;
+}
+
+.password-section button {
+  background-color: #ff4b72;
+  color: white;
+  border: none;
+  padding: 15px 24px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.password-section button:hover {
+  background-color: #d83a5c;
+}
+
+.error {
+  color: #d93025;
+  margin-top: 15px;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+
+.final-screen {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.final-screen h2 {
+  color: #ff4b72;
+}
