@@ -101,7 +101,7 @@ export default function TreasureHunt() {
     }
   };
 
-  // Tela Final
+ // Tela Final
   if (finished) {
     return (
       <div className="container final-screen">
@@ -109,10 +109,25 @@ export default function TreasureHunt() {
         <p>Olhe para trás...</p>
         <p>Você quer namorar comigo?</p>
         
+        {/* Botão de reset temporário para você testar */}
+        <button 
+          onClick={resetProgress} 
+          style={{ 
+            marginTop: '30px', 
+            padding: '10px 20px', 
+            background: 'transparent', 
+            color: '#666', 
+            border: '1px solid #666', 
+            borderRadius: '8px',
+            cursor: 'pointer',
+            fontSize: '12px'
+          }}
+        >
+          Resetar Teste (Dev)
+        </button>
       </div>
     );
   }
-
   return (
     <div className="container">
       {/* Botão de reset temporário para facilitar a sua vida a testar */}
