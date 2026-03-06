@@ -23,12 +23,12 @@ const steps = [
   },
   {
     id: 3,
-    question: "Nem só de obrigações e horários se vive um expediente. O próximo local é o exato cenário onde a rotina deu uma pausa e o nosso primeiro beijo aconteceu. Qual é o lugar?",
-    options: ["Cafeteria do Centro", "Meu Trabalho", "Ponto de Ônibus", "Restaurante da Esquina"],
-    correctAnswer: "Meu Trabalho",
+    question: "O local em que eu sinto a amarga tristeza do fim, o local ao qual minha bela dama repousa, Qual é o lugar?",
+    options: ["Cafeteria do Centro", "Sua casa", "Ponto de Ônibus", "Restaurante da Esquina"],
+    correctAnswer: "Sua casa",
     locationPassword: "cheguei", // Aqui a senha final pode ser o próprio "sim" do pedido!
-    revealedAddress: "Endereço do seu trabalho aqui",
-    mapIframeUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d270.98783866175125!2d-46.321790756524486!3d-23.9617402198279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03001a465193%3A0x3b0138d5ee0da38f!2sButeco%20das%20unidas!5e0!3m2!1spt-BR!2sbr!4v1771901494201!5m2!1spt-BR!2sbr"
+    revealedAddress: "Me encontre onde meu coração repousa: sua casa (fonte do sapo).",
+    mapIframeUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d541.8996859396651!2d-46.31343415635504!3d-23.97980991980763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce030049aaeefd%3A0x37c80ecdac8e8ce7!2sFonte%20do%20Sapo!5e0!3m2!1spt-BR!2sbr!4v1772777276523!5m2!1spt-BR!2sbr"
 }];
 
 export default function TreasureHunt() {
@@ -109,7 +109,7 @@ export default function TreasureHunt() {
         <p>Olhe para trás...</p>
         <p>Você quer namorar comigo?</p>
         
-        {/* Botão de reset temporário para você testar */}
+        {/* Botão de reset temporário para testar */}
         <button 
           onClick={resetProgress} 
           style={{ 
@@ -130,7 +130,7 @@ export default function TreasureHunt() {
   }
   return (
     <div className="container">
-      {/* Botão de reset temporário para facilitar a sua vida a testar */}
+      {/* Botão de reset temporário para testar */}
       <button 
         onClick={resetProgress} 
         style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '10px', background: 'transparent', color: '#666', border: '1px solid #666' }}
